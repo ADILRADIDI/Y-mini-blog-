@@ -1,0 +1,13 @@
+* {
+  text-decoration: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.first_li,
+.for_you {
+  border-bottom: 5px blue;
+  border-style: dotted;
+}
