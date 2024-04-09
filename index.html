@@ -10,224 +10,352 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <!-- add post absolute left-3/4 mt-32 -->
-    <div class="add_post rounded-full bg-blue-200 w-16 h-16  fixed bottom-0 right-0 mx-5 mb-3"
+  <!-- do not forget body is display flex okay -->
+  <body class="flex justify-around m-auto">
+    <section
+      class="se1 flex hidden xl:block lg:block md:block m-auto fixed left-0 top-0 ml-12 xl:ml-12 lg:ml-12 md:ml-0 sm:ml-0"
+      id="slide-left "
     >
-      <a href="addPost.html">
-        <img
-          class="w-10 h-16 flex items-center m-auto justify-center"
-          src="images/plus-large-svgrepo-com.svg"
-          alt=""
-        />
-      </a>
-    </div>
-    <section class="relative">
-      <!-- background image cover inside three icon-->
-      <!-- ajout pt here -->
-
-      <div
-        class="cover_profile bg-blue-300 flex justify-between h-36 w-full pt-4"
-      >
-        <div>
-          <a href="#">
-            <img
-              class="w-12 h-12 flex items-center"
-              src="images/return-back-button-svgrepo-com.svg"
-              alt="icon return"
-            />
+      <div class="m-auto">
+        <a href="index.html"
+          ><img
+            class="w-44 mb-10"
+            src="images/Untitled_design__10_-removebg-preview.png"
+            alt="logo.jpg"
+        /></a>
+        <div class="mb-8">
+          <a href="#" class="flex">
+            <img class="w-10" src="images/home.svg" alt="" />
+            <h1 class="text-xl ml-3 mt-1">Home</h1>
           </a>
         </div>
-        <div>
-          <a href="search.html" class="">
-            <img
-              class="w-12 h-12 mr-3"
-              src="images/search-svgrepo-com (2).svg"
-              alt="icon loop"
-            />
+        <div class="mb-8">
+          <a href="search.html" class="flex">
+            <img class="w-10" src="images/search-svgrepo-com (2).svg" alt="" />
+            <h1 class="text-xl ml-3 mt-1">Explore</h1>
           </a>
         </div>
-      </div>
-      <div class="conatainer_f flex justify-between">
-        <div class="profil">
-          <img
-            src="images/profile.jpg"
-            alt=""
-            class="rounded-full w-32 h-32 absolute top-1/2 left-4 border-white border-solid border-4 z-10"
-          />
+        <div class="mb-8">
+          <a href="#" class="flex">
+            <img
+              class="w-10"
+              src="images/notification-on-svgrepo-com.svg"
+              alt=""
+            />
+            <h1 class="text-xl ml-3 mt-1">Notification</h1>
+          </a>
         </div>
-        <div class="btn_edite_profil">
+        <div class="mb-8">
+          <a href="#" class="flex">
+            <img
+              class="w-10"
+              src="images/Untitled_design__10_-removebg-preview.png"
+              alt=""
+            />
+            <h1 class="text-xl ml-3 mt-1">premium</h1>
+          </a>
+        </div>
+        <div class="mb-8">
+          <a href="#" class="flex">
+            <img
+              class="w-10"
+              src="images/person_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <h1 class="text-xl ml-3 mt-1 font-bold">profil</h1>
+          </a>
+        </div>
+        <div class="btn_add">
           <a
-            href="#"
-            class="flex text-xl rounded-3xl border-solid border-black border-2 w-32 h-10 text-center justify-center text-center font-bold m-auto mr-3 mt-3 hover:bg-gray-300"
-            >Edit profile</a
+            href="addPost.html"
+            class="w-3/4 px-20 hover:text-black py-5 bg-blue-300 text-white font-bold rounded-full"
+            >POST</a
           >
         </div>
       </div>
     </section>
-    <div class="mt-7 ml-4">
-      <!-- text  -->
-      <div class="text">
-        <div id="full_name">
-          <h1 class="text-3xl font-bold flex items-center a">ADIL RADIDI</h1>
-        </div>
-        <div class="bio text-lg font-medium">
-          <p>
-            hi i am software enginner at google and creator
-            <span class="font-bold">Y</span>.
-          </p>
-        </div>
-        <div class="location flex mt-3">
+    <!-- add post absolute left-3/4 mt-32 -->
+    <section
+      class="md:w-2/4 sm:1/3
+      m-auto justify-center border-1 border-solid border-black border-r border-l"
+    >
+      <div
+        class="add_post rounded-full bg-blue-200 w-16 h-16 fixed bottom-0 right-0 mx-5 mb-3 block md:hidden lg:hidden xl:hidden"
+      >
+        <a href="addPost.html">
           <img
-            src="images/location-pin-alt-1-svgrepo-com.svg"
-            alt="icon location"
-            class="w-7"
+            class="w-10 h-16 flex items-center m-auto justify-center"
+            src="images/plus-large-svgrepo-com.svg"
+            alt=""
           />
-          <p class="font-medium text-lg">Casablanca,Grand Casablanca</p>
-        </div>
-        <div class="birthday flex mt-3">
-          <img src="images/birthday-cupcake-svgrepo-com.svg" class="w-7 mr-1" />
-          <p class="font-medium text-lg">Born 24 December 2003</p>
-        </div>
-        <div class="foll_wing flex mt-3 ml-2">
-          <div class="flex mr-5 text-lg">
-            <p class="font-bold">0</p>
-            <p class="ml-1">Following</p>
-          </div>
-          <div class="flex text-lg">
-            <p class="font-bold">9.8M</p>
-            <p class="ml-1">Followers</p>
-          </div>
-        </div>
+        </a>
       </div>
-      <div class="nav">
-        <ul class="flex mt-5 font-bold justify-around">
-          <li class="first_li">Posts</li>
-          <li>Replies</li>
-          <li>highlights</li>
-          <li>Media</li>
-        </ul>
-        <hr class="mt-3" />
-      </div>
-    </div>
-    
-    <section class="posts_list">
-      <div class="post mt-5">
-        <div class="conatainer_f flex">
-          <div class="prf">
-            <img
-              src="images/profile.jpg"
-              alt=""
-              class="rounded-full w-10 h-13 mx-5"
-            />
-          </div>
-          <div class="fullName_post flex ml-30">
-            <h1 class="font-bold mr-1">ADIL RADIDI</h1>
-            <p class="mr-1">@ADILRADIDI</p>
-            <p class="time">2h</p>
-          </div>
-          <div class="menu_post flex ml-20">
-            <a href="#"
-              ><img
-                class="w-7 h-7"
-                src="images/delete-svgrepo-com.svg"
-                alt="icon menu"
-            /></a>
-          </div>
-        </div>
-        <div class="">
-          <h1 class="text-lg font-medium ml-5 mb-1">Console.log("hello");</h1>
-          <img
-            src="images/GKjmsyOWgAAxP6s.jpeg"
-            class="rounded-3xl flex justify-center items-center m-auto w-11/12"
-          />
-        </div>
-        <div id="reaction" class="flex justify-around items-center m-auto mt-2">
-          <div id="comment" class="">
+      <section class="relative">
+        <!-- background image cover inside three icon-->
+        <!-- ajout pt here -->
+
+        <div
+          class="cover_profile bg-blue-300 flex justify-between h-36 w-full pt-4"
+        >
+          <div>
             <a href="#">
               <img
-                src="images/comment-alt-lines-svgrepo-com.svg"
-                alt=""
-                class="w-5"
+                class="w-12 h-12 flex items-center"
+                src="images/return-back-button-svgrepo-com.svg"
+                alt="icon return"
               />
             </a>
           </div>
-          <div class="" id="like">
-            <a href="#">
-              <img src="images/like-svgrepo-com.svg" alt="" class="w-5" />
-            </a>
-          </div>
-          <div id="share" class="">
-            <a href="#">
-              <img src="images/share-svgrepo-com.svg" alt="" class="w-5" />
-            </a>
-          </div>
-          <div id="save" class="">
-            <a href="#">
-              <img src="images/save-2-svgrepo-com.svg" alt="" class="w-5" />
-            </a>
-          </div>
-        </div>
-      </div>
-      <hr class="mt-5" />
-      <div class="post mt-5">
-        <div class="conatainer_f flex">
-          <div class="prf">
-            <img
-              src="images/profile.jpg"
-              alt=""
-              class="rounded-full w-10 h-13 mx-5"
-            />
-          </div>
-          <div class="fullName_post flex ml-30">
-            <h1 class="font-bold mr-1">ADIL RADIDI</h1>
-            <p class="mr-1">@ADILRADIDI</p>
-            <p class="time">2h</p>
-          </div>
-          <div class="menu_post flex ml-20">
-            <a href="#"
-              ><img
-                class="w-7 h-7"
-                src="images/delete-svgrepo-com.svg"
-                alt="icon menu"
-            /></a>
-          </div>
-        </div>
-        <div class="">
-          <h1 class="text-lg font-medium ml-5 mb-1">Console.log("hello");</h1>
-          <img
-            src="images/GKpxSI2WUAAK-5m.jpeg"
-            class="rounded-3xl flex justify-center items-center m-auto w-11/12"
-          />
-        </div>
-        <div id="reaction" class="flex justify-around items-center m-auto mt-2">
-          <div id="comment" class="">
-            <a href="#">
+          <div>
+            <a href="search.html" class="block md:hidden lg:hidden xl:hidden">
               <img
-                src="images/comment-alt-lines-svgrepo-com.svg"
-                alt=""
-                class="w-5"
+                class="w-12 h-12 mr-3"
+                src="images/search-svgrepo-com (2).svg"
+                alt="icon loop"
               />
             </a>
           </div>
-          <div class="" id="like">
-            <a href="#">
-              <img src="images/like-svgrepo-com.svg" alt="" class="w-5" />
-            </a>
+        </div>
+        <div class="conatainer_f flex justify-between">
+          <div class="profil">
+            <img
+              src="images/profile.jpg"
+              alt=""
+              class="rounded-full w-32 h-32 absolute top-1/2 left-4 border-white border-solid border-4 z-10"
+            />
           </div>
-          <div id="share" class="">
-            <a href="#">
-              <img src="images/share-svgrepo-com.svg" alt="" class="w-5" />
-            </a>
-          </div>
-          <div id="save" class="">
-            <a href="#">
-              <img src="images/save-2-svgrepo-com.svg" alt="" class="w-5" />
-            </a>
+          <div class="btn_edite_profil">
+            <a
+              href="#"
+              class="flex text-xl rounded-3xl border-solid border-black border-2 w-32 h-10 text-center justify-center text-center font-bold m-auto mr-3 mt-3 hover:bg-gray-300"
+              >Edit profile</a
+            >
           </div>
         </div>
+      </section>
+      <!-- bio and nav  -->
+      <div class="mt-7 ml-4">
+        <!-- text  -->
+        <div class="text">
+          <div id="full_name">
+            <h1 class="text-3xl font-bold flex items-center a">ADIL RADIDI</h1>
+          </div>
+          <div class="bio text-lg font-medium">
+            <p>
+              hi i am software enginner at google and creator
+              <span class="font-bold">Y</span>.
+            </p>
+          </div>
+          <div class="location flex mt-3">
+            <img
+              src="images/location-pin-alt-1-svgrepo-com.svg"
+              alt="icon location"
+              class="w-7"
+            />
+            <p class="font-medium text-lg">Casablanca,Grand Casablanca</p>
+          </div>
+          <div class="birthday flex mt-3">
+            <img
+              src="images/birthday-cupcake-svgrepo-com.svg"
+              class="w-7 mr-1"
+            />
+            <p class="font-medium text-lg">Born 24 December 2003</p>
+          </div>
+          <div class="foll_wing flex mt-3 ml-2">
+            <div class="flex mr-5 text-lg">
+              <p class="font-bold">0</p>
+              <p class="ml-1">Following</p>
+            </div>
+            <div class="flex text-lg">
+              <p class="font-bold">9.8M</p>
+              <p class="ml-1">Followers</p>
+            </div>
+          </div>
+        </div>
+        <div class="nav">
+          <ul class="flex mt-5 font-bold justify-around">
+            <li class="first_li">Posts</li>
+            <li>Replies</li>
+            <li>highlights</li>
+            <li>Media</li>
+          </ul>
+          <hr class="mt-3" />
+        </div>
       </div>
+
+      <section class="posts_list">
+        <div class="post mt-5">
+          <div class="conatainer_f flex">
+            <div class="prf">
+              <img
+                src="images/profile.jpg"
+                alt=""
+                class="rounded-full w-10 h-13 mx-2"
+              />
+            </div>
+            <div class="fullName_post flex ml-30">
+              <h1 class="font-bold mr-1">ADIL RADIDI</h1>
+              <p class="mr-1">@ADILRADIDI</p>
+              <p class="time">2h</p>
+            </div>
+            <div class="menu_post flex ml-20">
+              <a href="#"
+                ><img
+                  class="w-7 h-7"
+                  src="images/delete-svgrepo-com.svg"
+                  alt="icon menu"
+              /></a>
+            </div>
+          </div>
+          <div class="">
+            <h1 class="text-lg font-medium ml-5 mb-1">Console.log("hello");</h1>
+            <img
+              src="images/GKjmsyOWgAAxP6s.jpeg"
+              class="rounded-3xl flex justify-center items-center m-auto w-11/12"
+            />
+          </div>
+          <div
+            id="reaction"
+            class="flex justify-around items-center m-auto mt-2"
+          >
+            <div id="comment" class="">
+              <a href="#">
+                <img
+                  src="images/comment-alt-lines-svgrepo-com.svg"
+                  alt=""
+                  class="w-5"
+                />
+              </a>
+            </div>
+            <div class="" id="like">
+              <a href="#">
+                <img src="images/like-svgrepo-com.svg" alt="" class="w-5" />
+              </a>
+            </div>
+            <div id="share" class="">
+              <a href="#">
+                <img src="images/share-svgrepo-com.svg" alt="" class="w-5" />
+              </a>
+            </div>
+            <div id="save" class="">
+              <a href="#">
+                <img src="images/save-2-svgrepo-com.svg" alt="" class="w-5" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <hr class="mt-5" />
+        <div class="post mt-5">
+          <div class="conatainer_f flex">
+            <div class="prf">
+              <img
+                src="images/profile.jpg"
+                alt=""
+                class="rounded-full w-10 h-13 mx-2"
+              />
+            </div>
+            <div class="fullName_post flex ml-30">
+              <h1 class="font-bold mr-1">ADIL RADIDI</h1>
+              <p class="mr-1">@ADILRADIDI</p>
+              <p class="time">2h</p>
+            </div>
+            <div class="menu_post flex ml-20">
+              <a href="#"
+                ><img
+                  class="w-7 h-7"
+                  src="images/delete-svgrepo-com.svg"
+                  alt="icon menu"
+              /></a>
+            </div>
+          </div>
+          <div class="">
+            <h1 class="text-lg font-medium ml-5 mb-1">Console.log("hello");</h1>
+            <img
+              src="images/GKpxSI2WUAAK-5m.jpeg"
+              class="rounded-3xl flex justify-center items-center m-auto w-11/12"
+            />
+          </div>
+          <div
+            id="reaction"
+            class="flex justify-around items-center m-auto mt-2"
+          >
+            <div id="comment" class="">
+              <a href="#">
+                <img
+                  src="images/comment-alt-lines-svgrepo-com.svg"
+                  alt=""
+                  class="w-5"
+                />
+              </a>
+            </div>
+            <div class="" id="like">
+              <a href="#">
+                <img src="images/like-svgrepo-com.svg" alt="" class="w-5" />
+              </a>
+            </div>
+            <div id="share" class="">
+              <a href="#">
+                <img src="images/share-svgrepo-com.svg" alt="" class="w-5" />
+              </a>
+            </div>
+            <div id="save" class="">
+              <a href="#">
+                <img src="images/save-2-svgrepo-com.svg" alt="" class="w-5" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </section>
-    
+    <!--  section trend for you .....-->
+    <section class="fixed right-0 top-0 m-auto justify-center items-center 
+    hidden xl:block lg:block md:block ">
+      <form action="" class="m-auto mr-12 flex">
+        <img
+          src="images/search-svgrepo-com (2).svg"
+          alt=""
+          class="w-8 mt-5 xl:mt-5 lg:mt-5 md:mt-0 sm:mt-0"
+        />
+        <input
+          type="text"
+          placeholder="search"
+          class="bg-gray-300 w-56 h-8 rounded-2xl mt-5 px-2"
+        />
+      </form>
+      <div class="bg-gray-300 w-64 h-36 rounded-2xl mt-8">
+        <h1 class="text-black font-bold text-xl mx-2">Subscribe to Premium</h1>
+        <p class="mx-2">
+          Subscribe to unlock new features and if eligible, receive a share of
+          ads revenue.
+        </p>
+        <a
+          href="#"
+          class="mx-2 bg-black text-white font-bold hover:text-blue-500 w-44 h-12 px-5 rounded-full"
+        >
+          Subscribe
+        </a>
+      </div>
+      <div class="bg-gray-300 w-64 h-80 rounded-2xl mt-8">
+        <h1 class="text-black font-bold text-xl mx-2 mb-2">Trends for you</h1>
+        <div class="mx-5">
+          <p class="text-base font-light">trends in fashion</p>
+          <h1 class="text-xl font-bold">Sunglasses</h1>
+          <p class="text-base font-light">45.6k Posts</p>
+        </div>
+        <hr class="bg-blue-300 my-2" />
+        <div class="mx-5">
+        <p class="text-base font-light">trends in Music</p>
+        <h1 class="text-xl font-bold">SCHEDULER</h1>
+        <p class="text-base font-light">3.500 Posts</p>
+      </div>
+      <hr class="bg-blue-300 my-2" />
+      <div class="mx-5">
+        <p class="text-base font-light">Sport</p>
+        <h1 class="text-xl font-bold">Tuchel</h1>
+        <p class="text-base font-light">123k Posts</p>
+      </div>
+      </div>
+      
+    </section>
   </body>
 </html>

@@ -5,9 +5,17 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
+  overflow-x: hidden;
 }
 .first_li,
 .for_you {
   border-bottom: 5px blue;
   border-style: dotted;
+}
+
+/*  */
+@media (max-width:600px){
+  .se1{
+    display: none;
+  }
 }
